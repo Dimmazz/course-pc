@@ -1,0 +1,45 @@
+@import "../../styles/vars.scss";
+
+.upper__container-time {
+    display: flex;
+
+    @media (max-width: $width-mobile) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.container-time__box {
+    padding: 20px 30px 20px 30px;
+    background-color: $color-bg;
+    width: max-content;
+    max-width: 100%;
+    color: $color-white;
+    text-align: center;
+
+    &+& {
+        margin-left: 30px;
+    }
+
+    @media (max-width: 528px) {
+        width: 7rem;
+        height: 8rem;
+
+        margin: 1px;
+
+        &+& {
+            margin: 1px;
+        }
+    }
+}
+
+.container-time__value {
+    font-size: $fz-large;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.container-time__desc {
+    line-height: 140%;
+    color: rgba($color: $color-white, $alpha: .4);
+}

@@ -1,0 +1,30 @@
+@import "../../styles/vars.scss";
+
+.header {
+    max-width: $width-full;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 2.5rem;
+    padding: 2.5rem 5rem;
+}
+
+.header__header-nav {
+    @media (max-width: $width-tablet) {
+        display: none;
+    }
+}
+
+.header__header-menu {
+    display: flex;
+    color: white;
+}
+
+.header-menu__item+.header-menu__item {
+    margin-left: 56px;
+}
+
+.header__btn {
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}

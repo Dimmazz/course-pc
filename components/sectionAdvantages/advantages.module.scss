@@ -1,0 +1,72 @@
+@import "../../styles/vars.scss";
+
+.section-advantages {
+    padding-bottom: 12.5rem;
+
+    @media (max-width: $width-tablet) {
+        padding-bottom: 6.25em;
+    }
+}
+
+.section-advantages__title {
+    text-align: center;
+    padding-bottom: 7.5rem;
+}
+
+.section-advantages__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $width-tablet) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.section-advantages__advantage-card {
+    text-align: center;
+    max-width: 26.25rem;
+
+    &+& {
+        @media (max-width: $width-tablet) {
+            margin-top: 4.5rem;
+        }
+
+        @media (max-width: $width-mobile) {
+            margin-top: 7rem;
+        }
+    }
+
+
+}
+
+.teacher-card__img-box {
+    padding-bottom: 40px;
+}
+
+.teacher-card__img {
+    border-radius: 50%;
+}
+
+.teacher-card__title {
+    padding-bottom: 15px;
+}
+
+.teacher-card__desc {
+    padding-bottom: 30px;
+}
+
+.teacher-card__btn {
+    background: transparent;
+    border: 1px solid $color-white;
+
+    transition: border-color .2s ease-in, color .2s ease-in;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-primary;
+        border-color: $color-primary;
+    }
+}

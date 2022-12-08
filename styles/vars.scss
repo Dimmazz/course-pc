@@ -1,0 +1,50 @@
+// colors
+$color-primary: #7C6AFA;
+$color-primary-dark: #C89AFC;
+
+$color-default-text: #FFFFFF80;
+
+$color-second: #69B393;
+$color-third: #7DAB98;
+$color-fourth: #91A49E;
+$color-light: #FCFCFC;
+
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+$color-dark: #292929;
+$color-bg: #121212;
+
+$color-gradient: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+$color-gradient-2: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+
+
+$color-approval: $color-primary;
+$color-warning: #A3508E;
+$color-error: #CF6679;
+
+$color-hover: rgba($color: #55BB8E, $alpha: 0.04);
+;
+$color-focus: rgba($color: #55BB8E, $alpha: 0.12);
+$color-disabled: rgba($color: #FFFFFF, $alpha: 0.38);
+
+$default-border: 1px solid rgba($color: #FFFFFF, $alpha: 0.12);
+// $box-shadow: 1px solid rgba(255, 255, 255, 0.12);
+
+
+
+// width screen
+$width-full: 1920px;
+$width-laptop-l: 1440px;
+$width-laptop: 1024px;
+$width-tablet: 768px;
+$width-mobile: 425px;
+$width-mobile-s: 320px;
+
+// fontSize
+$fz-main: 16px;
+$fz-primary: 24px;
+$fz-extra: 48px;
+$fz-large: 36px;
+$fz-large-main: 32px;
+$fz-small: 14px;

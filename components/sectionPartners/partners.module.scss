@@ -1,0 +1,28 @@
+@import "../../styles/vars.scss";
+
+.section-partners__title {
+    &::before {
+        transform: rotate(224deg);
+    }
+}
+
+.section-partners__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-partners__item {
+    width: 20rem;
+    height: 9.375rem;
+    text-align: center;
+}
+
+.section-partners {
+    padding-bottom: 12.5rem;
+
+    @media (max-width: $width-tablet) {
+        padding-bottom: 6.25em;
+    }
+}

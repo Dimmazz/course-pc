@@ -1,0 +1,88 @@
+@import "../../styles/vars.scss";
+
+.lower__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-bg;
+    width: 100%;
+    max-width: $width-full;
+    height: 130px;
+    padding: 0 calc(5rem + 9.375rem);
+
+
+    position: absolute;
+    bottom: 0;
+
+    @media (max-width: $width-laptop) {
+        max-width: $width-laptop;
+        padding: 1rem 2rem;
+        height: auto;
+
+        flex-wrap: wrap;
+    }
+}
+
+.lower__btn {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    text-shadow: 2px 2px 4px #00000000;
+
+    transition: text-shadow .2s ease-in;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-shadow: 2px 2px 4px rgba($color: $color-white, $alpha: .35);
+    }
+
+    @media (max-width: $width-laptop) {
+        width: 250px;
+    }
+
+    @media (max-width: $width-mobile-s) {
+        width: 100%;
+    }
+}
+
+.lower__column {
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1em;
+
+    @media (max-width: $width-laptop) {
+        padding: 0;
+    }
+
+    @media (max-width: $width-mobile-s) {
+        width: 100%;
+    }
+}
+
+.lower__text-line {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $width-mobile-s) {
+        width: 100%;
+    }
+}
+
+.lower__bar-line {
+    width: calc(43.75em - 4rem);
+    // width: 700px;
+    height: 6px;
+
+
+    @media (max-width: $width-laptop-l) {
+        width: 100%;
+    }
+
+    @media (max-width: $width-laptop) {
+        width: calc(100vw - 4rem);
+    }
+}

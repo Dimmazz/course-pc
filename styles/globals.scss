@@ -1,0 +1,181 @@
+@import "./vars.scss";
+
+
+html,
+body {
+  box-sizing: border-box;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: $fz-main;
+  overflow-x: hidden;
+
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  // font-family: "DarkWide", Arial, sans-serif;
+  color: $color-light;
+
+  @media (max-width: $width-mobile) {
+    font-size: $fz-small;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #00000000;
+  transition: border .2s ease-in,
+    color .2s ease-in;
+
+  &:hover {
+    color: $color-primary;
+
+    // border-bottom: 1px solid #000;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+// reset texts tag
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-light;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: $fz-main;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $width-mobile) {
+    font-size: $fz-small;
+  }
+}
+
+// Custom classes
+.main-container {
+  width: calc(100% - 10rem - 9.375rem);
+  max-width: 1920px;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+
+  @media (max-width: 768px) {
+    width: 95%;
+  }
+
+  @media (max-width: 568px) {
+    width: 100%;
+    margin: 0;
+    padding: 0 7px;
+  }
+}
+
+.no-select {
+  pointer-events: none;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.btn {
+  font-size: $fz-main;
+  color: $color-white;
+  padding: 10px 30px;
+  // gap: 10px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+
+  transition: color .2s ease-in, text-shadow .2s ease-in;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-black;
+  }
+}
+
+.desc {
+  line-height: 160%;
+  color: rgba($color: $color-white, $alpha: .5);
+}
+
+// .link+.link {
+//   margin-left: 10px;
+// }
+
+// .desc__link {
+//   color: $color-primary;
+// }
+
+// .desc__bull {
+//   color: $color-primary;
+//   text-shadow: 0 0 16px $color-primary;
+//   padding: 0 10px;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     color-scheme: dark;
+//   }
+
+//   body {
+//     color: white;
+//     background: black;
+//   }
+// }
+
+// @font-face {
+//   font-family: "DarkWide";
+//   font-weight: 400;
+//   src: url("../../assets/fonts/Durk\ wide/Druk-Wide-Medium.ttf");
+// }
+
+// @font-face {
+//   font-family: "DarkWide";
+//   font-weight: 700;
+//   src: url("../../assets/fonts/Durk\ wide/Druk-Wide-Bold.ttf");
+// }

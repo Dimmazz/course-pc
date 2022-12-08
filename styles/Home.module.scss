@@ -1,0 +1,132 @@
+@import "./vars.scss";
+
+.text-line__desc {
+  line-height: 150%;
+  color: rgba($color: $color-white, $alpha: .4)
+}
+
+.text-line__value {
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.main {
+  background: $color-black;
+}
+
+
+
+.section-title {
+  font-weight: 700;
+  font-size: $fz-extra;
+  line-height: 140%;
+  padding-bottom: 2.8125rem;
+
+  @media (max-width: $width-tablet) {
+    width: 100%;
+    // width: max-content;
+    // max-width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: $fz-large;
+  }
+}
+
+.section-title-icon {
+  font-size: 36px;
+  padding-left: calc(2.5em + 0.5em);
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -1.25em;
+    left: 0;
+
+    font-size: 9px;
+    // font-size: 14.7px;
+    height: 7.5em;
+    width: 7.5em;
+    background-image: $color-gradient;
+    -webkit-mask: 0em -2.75em / 100% 100% radial-gradient(circle at center bottom, #fff0 2.4375em, #ffff 2.5em 3.6875em, #fff0 3.75em);
+    mask: 0em -2.75em / 100% 100% radial-gradient(circle at center bottom, #fff0 2.4375em, #ffff 2.5em 3.6875em, #fff0 3.75em);
+  }
+
+  @media (max-width: $width-mobile) {
+    padding-left: 0;
+    text-align: center;
+
+    &:before {
+      height: 0;
+      width: 0;
+    }
+  }
+}
+
+.advantage-card__image-box {
+  padding-bottom: 3.75rem;
+}
+
+.advantage-card__title {
+  font-weight: 500;
+  font-size: $fz-primary;
+  line-height: 140%;
+  padding-bottom: 1.875rem;
+}
+
+.advantage-card__desc {
+  line-height: 160%;
+  color: rgba($color: $color-white, $alpha: .8);
+}
+
+// .section-program__icon {
+//   height: calc(90px + 76px);
+
+//   &::before {
+//     left: 50%;
+//     transform: rotate(180deg);
+//   }
+// }
+
+// .section-program__title-upper {
+//   text-align: center;
+// }
+
+// .section-program__desc-title {
+//   max-width: 25.687rem;
+//   text-align: center;
+//   margin: 0 auto;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// @media (max-width: 600px) {
+//   .grid {
+//     width: 100%;
+//     flex-direction: column;
+//   }
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   .card,
+//   .footer {
+//     border-color: #222;
+//   }
+//   .code {
+//     background: #111;
+//   }
+//   .logo img {
+//     filter: invert(1);
+//   }
+// }

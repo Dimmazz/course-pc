@@ -1,0 +1,37 @@
+@import "../../styles/vars.scss";
+
+.section-teachers {
+    padding-bottom: 12.5rem;
+
+    @media (max-width: $width-tablet) {
+        padding-bottom: 6.25em;
+    }
+}
+
+.section-teachers__title {
+    padding-bottom: 6.875rem;
+}
+
+.section-teachers__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $width-laptop) {
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: $width-tablet) {
+        flex-direction: column;
+    }
+}
+
+.section-teachers__teacher-card {
+    text-align: center;
+
+    @media (max-width: $width-tablet) {
+        &+& {
+            margin-top: 2.5em;
+        }
+    }
+}
